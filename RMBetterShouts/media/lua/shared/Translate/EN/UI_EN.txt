@@ -1,0 +1,4 @@
+UI_DE = {
+    UI_optionscreen_binding_RMBetterShouts = "Better Shouts",
+    UI_optionscreen_binding_RMShout = "Shout",
+};
