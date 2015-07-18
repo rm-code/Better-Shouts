@@ -4,6 +4,10 @@ local VOLUME_WHISPER = 40;
 local RADIUS_SHOUT = 60;
 local VOLUME_SHOUT = 80;
 
+-- ------------------------------------------------
+-- Local Functions
+-- ------------------------------------------------
+
 local function shout()
     local player = getPlayer();
     if player and player:IsSneaking() then
@@ -20,5 +24,9 @@ local function checkKey(key)
         shout();
     end
 end
+
+-- ------------------------------------------------
+-- Game Events
+-- ------------------------------------------------
 
 Events.OnKeyPressed.Add(checkKey);
