@@ -1,8 +1,8 @@
-local RADIUS_WHISPER = 10;
-local VOLUME_WHISPER = 20;
+local RADIUS_WHISPER = 15;
+local VOLUME_WHISPER = 40;
 
-local RADIUS_SHOUT = 30;
-local VOLUME_SHOUT = 50;
+local RADIUS_SHOUT = 60;
+local VOLUME_SHOUT = 80;
 
 local SHOUTS = {
     'Over here!',
