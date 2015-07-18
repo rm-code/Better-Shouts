@@ -1,7 +1,11 @@
+local RADIUS_SHOUT = 20;
+local VOLUME_SHOUT = 50;
+
 local function shout()
     local player = getPlayer();
     if player then
         player:Say('Supercalifragilisticexpialidocious!');
+        addSound(player, player:getX(), player:getY(), player:getZ(), RADIUS_SHOUT, VOLUME_SHOUT);
     end
 end
 
