@@ -1,5 +1,10 @@
 # Changelog
 
+#### Version 1.1.0
+
+- Added support for adding custom shouts and whispers
+- Updated description for keybinding in the options menu
+
 #### Version 1.0.0
 
 - Added custom shouting mechanics
