@@ -3,6 +3,6 @@ id=RMBetterShouts
 poster=poster.png
 description=Replaces the vanilla shouting mechanics.
 
-modversion=0.0.0
+modversion=1.0.0
 pzversion=32.17
 versionurl=https://raw.githubusercontent.com/rm-code/better-shouts/master/RMBetterShouts/mod.info
