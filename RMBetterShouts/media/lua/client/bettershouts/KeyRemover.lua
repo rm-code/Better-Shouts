@@ -1,9 +1,17 @@
 require('keyBinding.lua');
 
+-- ------------------------------------------------
+-- Constants
+-- ------------------------------------------------
+
 local KEYS_TO_REMOVE = {
     'Shout',
     '[NPC Interaction]',
 }
+
+-- ------------------------------------------------
+-- Local Functions
+-- ------------------------------------------------
 
 ---
 -- This function iterates over the table of keys we want to remove. For each
@@ -22,5 +30,9 @@ local function removeKeys()
         end
     end
 end
+
+-- ------------------------------------------------
+-- Game Events
+-- ------------------------------------------------
 
 Events.OnGameBoot.Add(removeKeys);
