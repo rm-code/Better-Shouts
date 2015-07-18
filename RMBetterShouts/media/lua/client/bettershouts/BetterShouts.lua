@@ -1,7 +1,7 @@
 local RADIUS_WHISPER = 10;
 local VOLUME_WHISPER = 20;
 
-local RADIUS_SHOUT = 20;
+local RADIUS_SHOUT = 30;
 local VOLUME_SHOUT = 50;
 
 local function shout()
