@@ -1,4 +1,4 @@
 UI_DE = {
     UI_optionscreen_binding_RMBetterShouts = "Better Shouts",
-    UI_optionscreen_binding_RMShout = "Shout",
+    UI_optionscreen_binding_RMShout = "Shouting & Whispering",
 };
