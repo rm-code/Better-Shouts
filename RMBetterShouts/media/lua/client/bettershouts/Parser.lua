@@ -55,12 +55,20 @@ local function initMod()
 
     -- If the mod finds custom shouts it will use them to relace the default ones.
     if fileExists(PATH_CUSTOM_SHOUTS) then
-        RMBetterShouts.shouts = loadShouts(MOD_ID, PATH_CUSTOM_SHOUTS);
-        print(MOD_ID .. ': Using custom shouts!');
+        local custom = loadShouts(MOD_ID, PATH_CUSTOM_SHOUTS);
+        -- Check if the table loaded correctly and has content.
+        if custom and #custom > 0 then
+            RMBetterShouts.shouts = custom;
+            print(MOD_ID .. ': Using custom shouts!');
+        end
     end
     if fileExists(PATH_CUSTOM_WHISPERS) then
-        RMBetterShouts.whispers = loadShouts(MOD_ID, PATH_CUSTOM_WHISPERS);
-        print(MOD_ID .. ': Using custom whispers!');
+        local custom = loadShouts(MOD_ID, PATH_CUSTOM_WHISPERS);
+        -- Check if the table loaded correctly and has content.
+        if custom and #custom > 0 then
+            RMBetterShouts.shouts = custom;
+            print(MOD_ID .. ': Using custom whispers!');
+        end
     end
 end
 
