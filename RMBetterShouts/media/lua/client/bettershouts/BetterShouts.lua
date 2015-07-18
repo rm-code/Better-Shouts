@@ -21,4 +21,4 @@ local function checkKey(key)
     end
 end
 
-Events.OnKeyPressed.Add(checkKey)
+Events.OnKeyPressed.Add(checkKey);
