@@ -15,6 +15,9 @@ local MOD_ID = 'RMBetterShouts';
 local PATH_BASE_SHOUTS   = 'text/base_shouts.txt';
 local PATH_BASE_WHISPERS = 'text/base_whispers.txt';
 
+local PATH_CUSTOM_SHOUTS   = 'text/custom_shouts.txt';
+local PATH_CUSTOM_WHISPERS = 'text/custom_whispers.txt';
+
 local COMMENT_IDENTIFIER = '#';
 
 -- ------------------------------------------------
@@ -46,8 +49,19 @@ local function loadShouts(id, path)
 end
 
 local function initMod()
+    print(MOD_ID .. ': Loading shouts & whispers!');
     RMBetterShouts.shouts   = loadShouts(MOD_ID, PATH_BASE_SHOUTS);
     RMBetterShouts.whispers = loadShouts(MOD_ID, PATH_BASE_WHISPERS);
+
+    -- If the mod finds custom shouts it will use them to relace the default ones.
+    if fileExists(PATH_CUSTOM_SHOUTS) then
+        RMBetterShouts.shouts = loadShouts(MOD_ID, PATH_CUSTOM_SHOUTS);
+        print(MOD_ID .. ': Using custom shouts!');
+    end
+    if fileExists(PATH_CUSTOM_WHISPERS) then
+        RMBetterShouts.whispers = loadShouts(MOD_ID, PATH_CUSTOM_WHISPERS);
+        print(MOD_ID .. ': Using custom whispers!');
+    end
 end
 
 -- ------------------------------------------------
