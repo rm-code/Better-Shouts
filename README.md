@@ -11,7 +11,7 @@ __Better Shouts__ is a mod for [Project Zomboid](http://projectzomboid.com/), wh
 
 ![preview](https://raw.githubusercontent.com/rm-code/better-shouts/master/RMBetterShouts/poster.png)
 
-## Shouting & Whipsering
+## Shouting & Whispering
 
 Shouting in this mod works similar to the shouting in the vanilla game, but it adds a few more variations of things your character says.
 
