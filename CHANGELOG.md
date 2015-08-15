@@ -1,5 +1,10 @@
 # Changelog
 
+#### Version 1.1.1
+
+- Updated default shouts
+	- Shouts are allcaps now
+
 #### Version 1.1.0
 
 - Added support for adding custom shouts and whispers
